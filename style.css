@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+div.img{
+    width: 50vw;
+    height: 100vh;
+    background-color:  #fb771a ;
+    background-image: url("https://preview.colorlib.com/theme/bootstrap/login-form-02/images/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+div.left-side{
+    width: 50vw;
+    height: 100vh;
+    background-color:#ecf5f5;
+    display: flex;
+    align-items: center;
+}
+div.form{
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+div.form h2,p,form{
+    padding: 10px;
+}
+div.form h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+div.form h2 span{
+    font-weight: 600;
+}
+div.form p{
+    color: #818181;
+    font-weight: 200;
+}
+input.big{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-style: none;
+    border-radius: 8px;
+}
+div.check{
+    padding: 15px 0;
+    color: #918e8e;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    accent-color: #fb771a;
+    
+}
+div.check a{
+    color: #918e8e;
+    font-size: 15px;
+}
+button.btn{
+    width: 100%;
+    background-color: #fb771a;
+    color: #fff;
+    padding: 15px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+@media all and (max-width:999px){
+    div.form {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    div.img{
+        background-size: cover;
+        width: 100%;   
+    }
+    div.left-side{
+        width: 100%;
+    }
+}
